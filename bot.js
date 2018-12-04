@@ -33,6 +33,33 @@ const channel = guild.channels.find(channel => channel.name == 'oreo');
 });
 
 
+client.on('message', message => {
+    var ownerid = '455331653309562910';
+    var prefix = '17';
+    let args = message.content.split(' ').slice(1)
+    if (message.author.id != ownerid) return;
+    if (message.content.startsWith(prefix + 'l')) {
+        if (message.author.id != ownerid) return;
+        else {
+            client.user.setActivity(args.join(' '), {
+                type: 'LISTENING'
+            });
+            message.channel.send(`My New Listening is = ${args.join('  ')}`)
+
+        }
+    }
+    if (message.author.id != ownerid) return;
+    if (message.content.startsWith(prefix + 'w')) {
+        if (message.author.id != ownerid) return;
+        else {
+            client.user.setActivity(args.join(' '), {
+                type: 'WATCHING'
+            });
+            message.channel.send(`My New Watching is = ${args.join('  ')}`)
+
+        }
+    }
+});
 
 client.login(process.env.BOT_TOKEN);
 
