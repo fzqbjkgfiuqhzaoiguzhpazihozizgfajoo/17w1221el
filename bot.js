@@ -19,7 +19,7 @@ client1.on('ready' , () => {
 
 
 client.on("guildMemberAdd", (member) => {
-        var guild = client.guilds.find("name", ', Berlin ' Community .');
+        var guild = client.guilds.find("name", ' , Berlin ' Community .');
 const channel = guild.channels.find(channel => channel.name == 'berlin');
          channel.send(`** Wel__come__ To `` # `` __Ber__lin :flag_de: **`);
 });
@@ -27,7 +27,7 @@ const channel = guild.channels.find(channel => channel.name == 'berlin');
 
 
 client1.on("guildMemberAdd", (member) => {
-        var guild = client1.guilds.find("name", ', Berlin ' Community .');
+        var guild = client1.guilds.find("name", ' , Berlin ' Community .');
 const channel = guild.channels.find(channel => channel.name == 'berlin');
          channel.send(`** Wel__come__ To `` # `` __Ber__lin :flag_de: **`);
 });
